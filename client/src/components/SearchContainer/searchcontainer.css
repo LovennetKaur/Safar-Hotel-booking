@@ -1,0 +1,155 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerSearchBar {
+    width: 90%;
+    height: 3rem; 
+    background-color: #fff;
+    border: 3px solid #febb02;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.headerSearchItems i{
+    color: lightgrey;
+}
+
+.headerSearchItems {
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.headerSearchItems input{
+    border: none;
+    outline: none;
+}
+
+.headerSearchItems input,
+.headerSearchItems span{
+    margin-left: 10px;
+    color: lightgray; 
+}
+
+.Search {
+    background-color: #01959a ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.Search :hover {
+    background-color: #034c50;
+    color: #fff;
+}
+ /* date range */
+.date{
+    position: absolute;
+    top: 113vh;
+    z-index: 2;
+}
+.rdrDayNumber span {
+    border: none !important;
+}
+.rdrDayNumber span:after {
+    display: none !important;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 113vh;
+    margin-left: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .optionitems {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    
+  }
+  .optionitems>span{
+    color: rgb(70, 68, 68);
+  }
+  .optioncounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #01959a;
+    color: #01959a;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .optioncounterButton:hover {
+    background-color:#027a7e ; 
+  }
+  
+  .optioncounterButton:disabled {
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 768px) {
+    .headerSearchBar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .headerSearchItems {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .headerSearchItems input,
+    .headerSearchItems span {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .Search {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerSearchBar {
+        width: 100%;
+    }
+
+    .headerSearchItems {
+        gap: 5px;
+    }
+
+    .headerSearchItems input,
+    .headerSearchItems span {
+        font-size: 14px;
+    }
+
+    .Search {
+        font-size: 14px;
+    }
+}
+   

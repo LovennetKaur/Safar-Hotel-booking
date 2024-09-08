@@ -1,0 +1,25 @@
+.servicecontainer{
+    margin: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+.homeTitle{
+    
+    font-size: 2rem;
+}
+.searchbar{
+    padding:2rem;
+}
+
+@media screen and (max-width:850px) {
+    .servicecontainer{
+        width: 95%;
+        margin-left: 15px;
+    }
+    .homeTitle{
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+}

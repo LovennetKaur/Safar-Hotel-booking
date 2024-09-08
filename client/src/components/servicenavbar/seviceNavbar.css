@@ -1,0 +1,55 @@
+.header{
+    background-color: #01959a;
+    display: flex;
+}
+.navbar{
+    height: 50px;
+    background-color: #01959a;
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+.headerList{
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   margin-top: 1rem;
+   margin-left: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+.headerListItems i{
+    color: #fff;
+}
+.headerListItems a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.headerListItems a:hover{
+    color: #fff;
+    font-size: 1.2rem;
+}
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerList {
+        flex-direction: row;
+        gap: 20px;
+        margin-left: 0rem;
+        align-items: center;
+    }
+    .headerSearchBar {
+        width: 95%;
+        
+    }
+    
+}
+  
+
